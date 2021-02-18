@@ -597,8 +597,7 @@ footer {
 }
 
 .filter-btn::after {
-    font-family: fontawesome;
-    content: "\f160";
+    content: url('../img/icon-filter.svg');
     padding-left: 10px;
 }
 
@@ -618,12 +617,6 @@ footer {
     background: #FFFFFF;
 
     box-shadow:0px 1px 12px 8px rgba(148,189,204,0.53);
-}
-
-.flt[open] .filter-btn::after {
-    font-family: fontawesome;
-    content: "\f161";
-    padding-left: 10px;
 }
 
 .flt__det {
