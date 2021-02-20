@@ -1,7 +1,5 @@
-$black: #222222;
-
 .header {
-    background-color: $black;
+    background-color: $darcGray;
     height: 75px;
     color: #E8E8E8;
     display: flex;
@@ -23,7 +21,7 @@ $black: #222222;
 }
 
 .menu-link__btn{
-    background: $black;
+    background: $darcGray;
     border: none;
     /* height: 42px; */
     /* width: 42px; */

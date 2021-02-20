@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,7 +31,7 @@ main {
 }
 
 .header {
-  background-color: #222222;
+  background-color: #000;
   height: 75px;
   color: #E8E8E8;
   display: -webkit-box;
@@ -59,7 +60,7 @@ main {
 }
 
 .menu-link__btn {
-  background: #222222;
+  background: #000;
   border: none;
   /* height: 42px; */
   /* width: 42px; */
@@ -232,7 +233,7 @@ main {
   font-size: 30px;
   font-weight: 400;
   line-height: 36px;
-  color: #222;
+  color: #000;
   margin: 0;
 }
 
@@ -266,12 +267,10 @@ main {
   margin-bottom: 30px;
 }
 
-/* .feture-block:hover {
-    text-decoration: none;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    box-shadow: 0px 0px 30px 0px rgb(216, 180, 63);
-} */
+.feture-link {
+  text-decoration: none;
+}
+
 .feture-desc {
   text-align: left;
   margin: 24px 20px;
@@ -317,7 +316,7 @@ main {
 .feture-btn:hover {
   background: #F16D7F;
   border: 1px solid #FF6A6A;
-  color: #FFFFFF;
+  color: #FFF;
   cursor: pointer;
 }
 
@@ -814,5 +813,163 @@ footer {
   font-weight: 300;
   line-height: 19px;
   color: #EF5B70;
+}
+
+.wrap {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.slider {
+  background-color: #F7F7F7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.slider-img {
+  padding-top: 10px;
+}
+
+.slider-btn {
+  padding: 0;
+  width: 47px;
+  height: 47px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  background-color: rgba(42, 42, 42, 0.15);
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+}
+
+.slider-btn:hover {
+  color: #F16D7F;
+}
+
+.slider-btn:active {
+  color: #000;
+}
+
+.slider-btn-left {
+  left: 0;
+}
+
+.slider-btn-right {
+  right: 0;
+}
+
+.about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #FFF;
+  margin-top: -65px;
+  position: relative;
+  /* чтобы блок был над, а не под */
+  border: 1px solid #EAEAEA;
+  height: 600px;
+}
+
+.about-wrap-name {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.about-wrap-line-sm {
+  height: 3px;
+  width: 63px;
+  background: #EF5B70;
+}
+
+.about-wrap-title {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+}
+
+.about-wrap-desc {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  padding-top: 15px;
+}
+
+.about-wrap-price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.about-wrap-line-xl {
+  height: 1px;
+  width: 641px;
+  background: #EAEAEA;
+  margin-top: 35px;
+}
+
+.about-wrap-select {
+  width: 540px;
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-wrap-btn {
+  margin-top: 45px;
+  border: 1px solid #FF6A6A;
+  background: #FFF;
+  padding: 13px 55px 8px 23px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+.about-wrap-btn::before {
+  content: url(../../img/icon-cart.svg);
+  vertical-align: middle;
+  color: #F26376;
+  padding-right: 22px;
 }
 /*# sourceMappingURL=style.css.map */

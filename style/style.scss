@@ -1,3 +1,5 @@
+@import 'var';
+
 * {
     box-sizing: border-box;
 }
@@ -40,3 +42,5 @@ main {
 @import 'catalog/breadcrumb';
 @import 'catalog/filter';
 @import 'catalog/pagination';
+
+@import 'product/slider';

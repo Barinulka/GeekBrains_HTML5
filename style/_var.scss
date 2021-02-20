@@ -1,0 +1,25 @@
+$white: #FFF;
+$black: #000;
+$darcGray: #222;
+
+$shift: 65px;
+$slider-btn: rgba(42, 42, 42, 0.15);
+$slider-hover: #F16D7F;
+
+@mixin slider-btn {
+    padding: 0;
+    width: 47px;
+    height: 47px;
+    border: none;
+    outline: none;
+
+    font-size: 22px;
+}
+
+@mixin slider-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
