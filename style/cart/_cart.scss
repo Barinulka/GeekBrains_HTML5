@@ -1,3 +1,53 @@
+.block, .form {
+    display: flex;
+    flex-direction: column;
+}
 .cart {
     @include cart-flex;
+    margin-top: 96px;
+    &-block {
+        height: 306px;
+        width: 652px;
+        display: flex;
+        margin-bottom: 40px;
+        box-shadow: 14px 14px 14px 5px #F8F3F4;
+        &-desc {
+            padding-left: 31px;
+        }
+        &-title {
+            font-style: normal;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: $black;
+            margin-bottom: 42px;
+        }
+        &-price, &-color, &-size, &-quant {
+            @include cart-font;
+            margin: 10px 0 0 0;
+        }
+        &-price_red, &-color_red, &-size_red {
+            color: #F16D7F;
+        }
+        &-quant_numb {
+            display: inline;
+            border: 1px solid #EAEAEA;
+            text-align: center;
+            width: 43px;
+            height: 26px;
+            padding-left: 5px;
+            margin-left: 24px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+        }
+    }
+    &-form {
+        height: 272px;
+        width: 360px;
+        outline: 1px solid black;
+        margin-bottom: 40px;
+
+    }
 }

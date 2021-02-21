@@ -30,3 +30,11 @@ $slider-hover: #F16D7F;
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin cart-font {
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #575757;
+}
