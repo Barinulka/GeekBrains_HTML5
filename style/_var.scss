@@ -23,3 +23,10 @@ $slider-hover: #F16D7F;
     align-items: center;
     align-content: center;
 }
+
+@mixin cart-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
