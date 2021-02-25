@@ -1,0 +1,46 @@
+@import 'var';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', 'Arial', 'Helvetica', sans-serif;
+}
+
+.center {
+    padding: 0 calc(50% - 1140px / 2);
+}
+
+.wrap {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.hidden {
+    position: absolute;
+    left: -999999px;
+    width: 0px;
+    height: 0;
+    visibility: hidden;
+}
+
+main {
+    margin-bottom: 95px;
+}
+
+
+@import 'index/menu';
+@import 'index/brand';
+@import 'index/promo';
+@import 'index/feture';
+@import 'index/feature';
+@import 'index/subscribe';
+@import 'index/footer';
+
+@import 'catalog/breadcrumb';
+@import 'catalog/filter';
+@import 'catalog/pagination';
+
+@import 'product/slider';

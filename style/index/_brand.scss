@@ -1,0 +1,50 @@
+.brand {
+    background-color: #F1E4E6;
+    height: 764px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-photo {
+    background: url(../img/brand.png);
+    height: 764px;
+    width: 61%;
+    background-position: right;
+}
+
+.brand-title {
+    width: 49%;
+    text-transform: uppercase;
+    border-left: 12px solid #F16D7F;
+    padding: 0 16px;
+    margin-left: 91px;
+
+}
+
+.brand-title h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.brand-title__big {
+    font-style: normal;
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    color: #222;
+}
+
+.brand-title__normal,
+.brand-title__red {
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    color: #222;
+}
+
+.brand-title__red {
+    color: #F16D7F;
+}

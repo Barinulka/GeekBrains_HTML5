@@ -1,0 +1,54 @@
+.header {
+    background-color: $darcGray;
+    height: 75px;
+    color: #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-group {
+    display: flex;
+    align-items: center;
+}
+
+/* .menu-link__logo {
+    margin-right: 41px;
+} */
+
+.menu-link i:hover {
+    text-decoration: none;
+    color: #54D65F;
+}
+
+.menu-link__btn{
+    background: $darcGray;
+    border: none;
+    /* height: 42px; */
+    /* width: 42px; */
+    cursor: pointer;
+}
+
+.menu-link i {
+    color: #E8E8E8;
+    font-size: 26px;
+}
+
+.menu {
+
+}
+
+.menu-list {
+    display: inline;
+    list-style-type: none;
+    margin-right: 33px;
+}
+
+.menu-list:last-child {
+    margin-right: 0px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #E8E8E8;
+    font-weight: 300;
+}

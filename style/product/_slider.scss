@@ -1,0 +1,123 @@
+.wrap {
+	width: 600px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+.slider {
+	background-color:#F7F7F7;;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-bottom: $shift;
+	
+	&-img {
+        padding-top: 10px;
+    }
+	
+	&-btn {
+        @include slider-btn;
+        background-color: $slider-btn;
+        color: $black;
+        cursor: pointer;
+        position: absolute;
+        &:hover {
+            color: $slider-hover;
+        }
+        &:active {
+            color: $black;
+        }
+                
+        &-left {
+            left: 0;
+        }
+                
+        &-right {
+            right: 0;
+        }
+	}
+}
+
+.about-wrap {
+    @include slider-flex;
+	background-color: $white;
+	margin-top: - $shift;
+	position: relative; /* чтобы блок был над, а не под */
+    border: 1px solid #EAEAEA;
+    height: 600px;
+    &-name {
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        color: #F16D7F;
+        text-transform: uppercase;
+    }
+    &-line-sm {
+        height: 3px;
+        width: 63px;
+        background: #EF5B70;
+    }
+    &-title {
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #4D4D4D;;
+        text-transform: uppercase;
+    }
+    &-desc {
+        text-align: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5E5E5E;
+
+        padding-top: 15px;
+    }
+    &-price {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #EF5B70;
+    }
+    &-line-xl {
+        height: 1px;
+        width: 641px;
+        background: #EAEAEA;
+        margin-top: 35px;
+    }
+    &-select {
+        width: 540px;
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+    }
+    &-btn {
+        margin-top: 45px;
+        border: 1px solid #FF6A6A;
+        background: $white;
+        padding: 13px 55px 8px 23px;
+        cursor: pointer;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #F26376;
+    }
+    &-btn::before {
+        content: url(../../img/icon-cart.svg);
+        vertical-align: middle;
+        color: #F26376;
+
+        padding-right: 22px;
+    }
+}
+
+

@@ -1,0 +1,140 @@
+.filter-items {
+    margin-top: 51px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-select {
+    width: 360px;
+    display: flex;
+    margin-right: 30px;
+    clear: both;
+}
+
+::-webkit-details-marker {display: none;}
+
+.filter-btn,
+.filter-btn__nav {
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.filter-btn::after {
+    content: url('../img/icon-filter.svg');
+    padding-left: 10px;
+}
+
+.filter-btn:focus {
+    border: none;
+    outline: none;
+}
+
+.flt {
+    width: 360px;
+    display: flex;
+    text-align: left;
+    padding: 13px 16px;
+}
+
+.flt[open] {
+    background: #FFFFFF;
+
+    box-shadow:0px 1px 12px 8px rgba(148,189,204,0.53);
+}
+
+.flt__det {
+    margin-top: 16px;
+}
+
+.flt__summary {
+    display: block;
+    border-left: 5px solid #EF5B70;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #EF5B70;
+}
+
+.summary-menu {
+    padding-left: 34px;
+}
+
+.summary-list {
+    list-style-type: none;
+    padding-bottom: 16px;
+}
+
+.summary-list:last-child {
+    padding-bottom: 0;
+}
+
+.summary-link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #6F6E6E;
+    clear: both;
+}
+
+.flt-filt {
+    display: flex;
+    text-align: left;
+    padding: 13px 16px;
+    }
+
+.flt-filt[open] {
+    background: #FFFFFF;
+    box-shadow:0px 1px 12px 8px rgba(148,189,204,0.53);
+}
+
+.filter-btn__nav {
+    font-weight: 400;
+    color: #6F6E6E;
+    clear: both;
+}
+
+.filter-btn__nav::after {
+    font-family: fontawesome;
+    content: "\f105";
+    padding-left: 10px;
+    clear: both;
+}
+
+.flt-filt[open] .filter-btn__nav::after {
+    font-family: fontawesome;
+    content: "\f107";
+    padding-left: 10px;
+    clear: both;
+}
+
+.filter-btn__nav:focus {
+    border: none;
+    outline: none;
+    clear: both;
+}
+
+.mt {
+    margin-top: 7px;
+}
