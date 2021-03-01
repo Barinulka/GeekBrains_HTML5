@@ -35,12 +35,53 @@
     height: 581px;
     width: 360px;
     background-color:#F8F8F8;
-   
+    position: relative;
     margin-bottom: 30px;
 }
 
 .feture-link {
     text-decoration: none;
+}
+
+.feture-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.feture-block:hover .feture-overlay {
+    opacity: 1;
+}
+
+.feture-overlay-btn {
+    border: 1px solid $white;
+    background: none;
+    padding: 13px;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: $white;
+}
+
+.feture-overlay-btn::before {
+    content: url(../../img/icon-cart-w.svg);
+    vertical-align: middle;
+    color: $white;
+
+    padding-right: 22px;
 }
 
 .feture-desc {

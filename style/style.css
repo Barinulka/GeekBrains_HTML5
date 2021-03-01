@@ -146,9 +146,11 @@ main {
   margin-bottom: 30px;
 }
 
-/* .promo-block:hover {
-    box-shadow: 0px 0px 14px 0px rgba(111, 93, 175, 1);
-} */
+.promo-block:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
 /* .promo-block:hover .promo-link__small {
     font-size: 18px;
 } */
@@ -233,11 +235,49 @@ main {
   height: 581px;
   width: 360px;
   background-color: #F8F8F8;
+  position: relative;
   margin-bottom: 30px;
 }
 
 .feture-link {
   text-decoration: none;
+}
+
+.feture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  background-color: rgba(58, 56, 56, 0.83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.feture-block:hover .feture-overlay {
+  opacity: 1;
+}
+
+.feture-overlay-btn {
+  border: 1px solid #FFF;
+  background: none;
+  padding: 13px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFF;
+}
+
+.feture-overlay-btn::before {
+  content: url(../../img/icon-cart-w.svg);
+  vertical-align: middle;
+  color: #FFF;
+  padding-right: 22px;
 }
 
 .feture-desc {
@@ -550,9 +590,11 @@ footer {
 
 .filter-select {
   width: 360px;
+  position: relative;
   display: flex;
   margin-right: 30px;
   clear: both;
+  z-index: 1;
 }
 
 ::-webkit-details-marker {

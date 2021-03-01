@@ -12,9 +12,11 @@
 
 .filter-select {
     width: 360px;
+    position: relative;
     display: flex;
     margin-right: 30px;
     clear: both;
+    z-index: 1;
 }
 
 ::-webkit-details-marker {display: none;}
