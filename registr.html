@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/a8bd107372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header center">
+            <div class="header-group">
+                <ul class="menu">
+                    <li class="menu-list"><a href="index.html" class="menu-link menu-link__logo"><img src="img/logo.png" alt="The Brand"></a></li>
+                    <li class="menu-list"><button class="menu-link menu-link__btn"><i class="fas fa-search"></i></button></li>
+                </ul>
+            </div>
+            <div class="header-group">
+                <ul class="menu">
+                    <li class="menu-list"><button class="menu-link menu-link__btn"><i class="fas fa-bars"></i></button></li>
+                    <li class="menu-list"><a class="menu-link" href="#"><i class="far fa-user"></i></a></li>
+                    <li class="menu-list"><a class="menu-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumb center">
+            <h1 class="bread-title">Registration</h1>
+        </section>
+
+        <section class="registr center">
+            <h2 class="hidden">Registration</h2>
+            <div class="registr-block">
+                <form action="#" class="registr-block-form">
+                    <h3 class="registr-block-form-title">Your Name</h3>
+                    <input type="text" placeholder="First Name" required class="registr-block-form-input"><br>
+                    <input type="text" placeholder="Last Name" required class="registr-block-form-input"><br>
+                    <label class="registr-block-form-gender"><input type="radio" name="gender" checked> man</label>
+                    <label class="registr-block-form-gender"><input type="radio" name="gender"> woman</label>
+                    <h3 class="registr-block-form-title">Login details</h3>
+                    <input type="email" placeholder="Email" required class="registr-block-form-input"><br>
+                    <input type="password" placeholder="Password" minlength="8" required class="registr-block-form-input"><br>
+                    <p class="registr-block-form-alert">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <button class="registr-block-form-btn">join now</button>
+                </form>
+                <div class="registr-block-info">
+                    <h3 class="registr-block-info-title">Loyalty has its perks</h3>
+                    <p class="registr-block-info-text">Get in on the loyalty program where you can earn points and <br> unlock serious perks. Starting with these as soon as you join:</p>
+                    <ul class="registr-block-info-items">
+                        <li class="registr-block-info-list">15% off welcome offer</li>
+                        <li class="registr-block-info-list">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registr-block-info-list">$10 off a purchase on your birthday</li>
+                        <li class="registr-block-info-list">Early access to products</li>
+                        <li class="registr-block-info-list">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="subscribe-items center">
+        <h2 class="hidden">Subscribe</h2>
+        <div class="blog">
+            <img src="img/author.png" alt="author-logo" class="blog-img">
+            <p class="blog-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="blog-text__italic">a pulvinar purus condimentum</span>“</p>
+        </div>
+        <div class="subscribe">
+            <h3 class="subscribe-title"><span class="subscribe-title__big">subscribe</span><br>for our newletter and promotion</h3>
+            <form action="#" class="forma">
+                <input class="forma-field" type="email" placeholder="Enter Your Email">
+                <input class="forma-btn" type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+    <footer class="center">
+        <div class="copy">
+            <p class="copy-text">&copy; 2021 Brand All Rights Reserved.</p>
+        </div>
+        <div class="social">
+            <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
