@@ -9,17 +9,21 @@
     width: 360px;
     height: 260px;
     color: #fff;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+
+    transition: transform 1s;
+    transition-timing-function: ease;
 }
 
 .promo-block:hover {
     transform: scale(1.05);
-    transition: 0.5s;
+}
+
+.promo-block__women:hover {
+    transform: rotateY(-360deg) scale(1.05);
 }
 
 /* .promo-block:hover .promo-link__small {
