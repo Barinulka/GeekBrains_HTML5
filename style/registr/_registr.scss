@@ -1,0 +1,72 @@
+.registr{
+    margin: 64px 0;
+    &-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width: 100%;
+        min-height: 100%;
+                
+        &-form{
+            width: 360px;
+            min-height: 100%;
+            &-title {
+                @include registr-font(300, 16px, 19px, $black);
+                margin-bottom: 20px;
+            }
+            &-input {
+                width: 360px;
+                height: 45px;
+                padding-left: 18px;
+                margin-bottom: 21px;
+                border: 1px solid #A4A4A4;
+            }
+            &-gender {
+                @include registr-font(300, 11px, 13px, $black);
+                text-transform: capitalize;
+            }
+            &-alert {
+                @include registr-font(300, 13px, 16px, #B1B1B1);
+                margin-top: -12px;
+            }
+            &-btn {
+                width: 167px;
+                height: 50px;
+                padding: 0;
+                border: none;
+                text-transform: uppercase;
+                color: $white;
+                background: #F16D7F;
+                margin-top: 40px;
+                cursor: pointer;
+            }
+            &-btn::after{
+                content: "\f061";
+                font-family: 'fontawesome';
+                color: $white;
+                padding-left: 20px;
+            }
+        }
+        &-info{
+            min-height: 100%;
+            min-width: 50%;
+            &-title, &-text, &-list {
+                @include registr-font(300, 24px, 29px, $black);
+            }
+            &-title {
+                text-transform: uppercase;
+            }
+            &-items {
+                padding: 0;
+            }
+            &-list {
+                list-style-type: none;
+                margin-bottom: 16px;
+            }
+            &-list::before {
+                content: url('../../img/icon-check.svg');
+                padding-right: 23px;
+            }
+        }
+    }
+}

@@ -38,3 +38,11 @@ $slider-hover: #F16D7F;
     line-height: 26px;
     color: #575757;
 }
+
+@mixin registr-font($weight, $size, $height, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+
+    color: $color;
+}
