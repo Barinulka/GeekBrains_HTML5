@@ -31,13 +31,15 @@ main {
 }
 
 
-@import 'index/menu';
-@import 'index/brand';
-@import 'index/promo';
-@import 'index/feture';
-@import 'index/feature';
-@import 'index/subscribe';
-@import 'index/footer';
+// @import 'index/menu';
+// @import 'index/brand';
+// @import 'index/promo';
+// @import 'index/feture';
+// @import 'index/feature';
+// @import 'index/subscribe';
+// @import 'index/footer';
+
+@import 'index';
 
 @import 'catalog/breadcrumb';
 @import 'catalog/filter';

@@ -138,7 +138,7 @@ main {
 
 .promo-block {
   width: 360px;
-  height: 260px;
+  min-height: 260px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -177,7 +177,7 @@ main {
 .promo-block__acc {
   background: url(../img/acc.jpg);
   width: 100%;
-  height: 180px;
+  min-height: 180px;
   margin-bottom: 0;
 }
 
@@ -445,10 +445,6 @@ main {
   border-right: none;
 }
 
-.forma-field:hover {
-  /* background-color: grey; */
-}
-
 .forma-field::-moz-placeholder {
   font-size: 14px;
   font-weight: 400;
@@ -529,6 +525,22 @@ footer {
   background: #F16D7F;
 }
 
+/* Media */
+@media all and (max-width: 1180px) {
+  .center {
+    padding: 0 calc(50% - 920px / 2);
+  }
+
+  .promo-block {
+    width: 230px;
+    min-height: 170px;
+  }
+
+  .promo-block__acc {
+    width: 100%;
+    min-height: 116px;
+  }
+}
 .breadcrumb {
   height: 148px;
   background: #F8F3F4;
