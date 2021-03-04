@@ -48,6 +48,18 @@
     font-weight: 700;
 }
 
-.feature-items__cat {
-    margin-top: 64px;
+/* Media */
+
+@media all and (max-width: 1239px){
+    
+}
+
+@media all and (max-width: 820px){
+    .breadcrumb {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bread-menu {
+        padding: 0;
+    }
 }

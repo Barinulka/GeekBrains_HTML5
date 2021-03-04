@@ -140,3 +140,34 @@
 .mt {
     margin-top: 7px;
 }
+
+.filter-select__mobile {
+    display: none !important;
+}
+
+.filter-btn__mobile::after {
+    content: '' !important;
+}
+
+/* Media */
+
+@media all and (max-width: 1239px){
+    
+}
+
+@media all and (max-width: 820px){
+    .filter-select__left {
+        width: 50px;
+    }
+    .filter-select__left {
+        display: none !important;
+    }
+    .filter-select__mobile {
+        display: flex !important;
+        width: 50px;
+        z-index: 4;
+    }
+    .filter-select__mobile .flt[open] {
+        width: 360px;
+    }
+}
