@@ -50,7 +50,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 420px;
+    min-height: 420px;
     background-color: rgba(58, 56, 56, 0.83);
     display: flex;
     justify-content: center;
@@ -138,4 +138,20 @@
 
 .feture-btn:focus {
     outline: none;
+}
+
+/* Media */
+
+@media all and (max-width: 1239px){
+    
+}
+
+@media all and (max-width: 820px){
+    .feture-items {
+       margin-top: 64px;
+    }
+    .feture-img {
+        max-width: 100%;
+        width: 100%;
+    }
 }

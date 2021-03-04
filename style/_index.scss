@@ -51,7 +51,7 @@
 
 .brand {
     background-color: #F1E4E6;
-    height: 764px;
+    min-height: 764px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,9 +59,10 @@
 
 .brand-photo {
     background: url(../img/brand.png);
-    height: 764px;
+    min-height: 764px;
     width: 61%;
     background-position: right;
+    background-size: cover;
 }
 
 .brand-title {
@@ -70,7 +71,6 @@
     border-left: 12px solid #F16D7F;
     padding: 0 16px;
     margin-left: 91px;
-
 }
 
 .brand-title h1 {
@@ -495,18 +495,3 @@ footer {
    background: #F16D7F;
 }
 
-/* Media */
-
-@media all and (max-width: 1180px){
-    .center {
-        padding: 0 calc(50% - 920px / 2);
-    }
-    .promo-block {
-        width: 230px;
-        min-height: 170px;
-    }
-    .promo-block__acc {
-        width: 100%;
-        min-height: 116px;
-    }
-}
