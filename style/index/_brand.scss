@@ -1,6 +1,6 @@
 .brand {
     background-color: #F1E4E6;
-    height: 764px;
+    min-height: 764px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,9 +8,10 @@
 
 .brand-photo {
     background: url(../img/brand.png);
-    height: 764px;
+    min-height: 764px;
     width: 61%;
     background-position: right;
+    background-size: cover;
 }
 
 .brand-title {
@@ -47,4 +48,67 @@
 
 .brand-title__red {
     color: #F16D7F;
+}
+
+/* Media */
+
+@media all and (max-width: 1239px){
+    .brand {
+        min-height: 368px;
+    }
+    .brand-photo {
+        min-height: 368px;
+        /* width: 89%; */
+        background-size: cover;
+    }
+    .brand-title__big {
+        font-style: normal;
+        font-family: Lato;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 52px;
+        color: #222;
+    }
+    
+    .brand-title__normal,
+    .brand-title__red {
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        color: #222;
+    }
+    .brand-title__red {
+        color: #F16D7F;
+    }
+}
+
+@media all and (max-width: 820px){
+    .brand-photo {
+        display: none;
+    }
+    .brand-title {
+        width: 100%;
+        margin-left: 15%;
+    }
+    .brand-title__big {
+        font-style: normal;
+        font-family: Lato;
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 45px;
+        color: #222;
+    }
+    
+    .brand-title__normal,
+    .brand-title__red {
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #222;
+    }
+    .brand-title__red {
+        color: #F16D7F;
+    }
 }

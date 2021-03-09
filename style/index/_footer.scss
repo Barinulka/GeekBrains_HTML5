@@ -37,3 +37,15 @@ footer {
    color: #fff;
    background: #F16D7F;
 }
+
+@media all and (max-width: 820px){
+    footer {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    .social {
+        padding-top: 15px;
+    }
+}

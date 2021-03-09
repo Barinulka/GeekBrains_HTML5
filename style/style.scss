@@ -48,3 +48,16 @@ main {
 @import 'cart/cart';
 
 @import 'registr/registr';
+
+
+@media all and (max-width: 1239px){
+    .center {
+        padding: 0 calc(50% - 765px / 2);
+    }
+}
+
+@media all and (max-width: 820px){
+    .center {
+        padding: 0 calc(50% - 362px / 2);
+    }
+}
