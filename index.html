@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/a8bd107372.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
     <header>
@@ -20,13 +21,37 @@
                 </ul>
             </div>
             <div class="header-group">
+                <button class="menu-link menu-link__btn"><i class="fas fa-bars"></i></button>
+                <div class="overlay-menu">
+                    <button class="menu-close-btn">X</button>
+                    
+                    <ul class="overlay-memu-list">
+                      <li class="overlay-menu-item"><a href="#" class="overlay-menu-link">qweqeqw</a></li>
+                      <li class="overlay-menu-item"><a href="#" class="overlay-menu-link">qweqeqw</a></li>
+                      <li class="overlay-menu-item"><a href="#" class="overlay-menu-link">qweqeqw</a></li>
+                      <li class="overlay-menu-item"><a href="#" class="overlay-menu-link">qweqeqw</a></li>
+                    </ul>
+                    
+                </div>
+                <script>
+                    document.querySelector(".menu-link__btn").onclick = function() {
+                        document.querySelector(".overlay-menu").classList.add("overlay-menu-open");
+                    } 
+            
+                    document.querySelector(".menu-close-btn").onclick = function() {
+                        document.querySelector(".menu-close-btn").classList.remove("overlay-menu-open");
+                    }
+                </script>
                 <ul class="menu">
-                    <li class="menu-list"><button class="menu-link menu-link__btn"><i class="fas fa-bars"></i></button></li>
                     <li class="menu-list menu-list__mobile"><a class="menu-link " href="registr.html"><i class="far fa-user"></i></a></li>
                     <li class="menu-list menu-list__mobile"><a class="menu-link " href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
+                    
+                
+
             </div>
         </div>
+        
     </header>
 
      <main>
