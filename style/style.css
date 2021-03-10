@@ -151,8 +151,12 @@ main {
   font-size: 14px;
   line-height: 17px;
   color: #6F6E6E;
-  padding: 6px 0;
+  padding: 6px 21px;
   list-style-type: none;
+}
+
+.overlay-menu-item__last {
+  padding-bottom: 17px;
 }
 
 .overlay-menu-list__dop {
