@@ -46,3 +46,11 @@ $slider-hover: #F16D7F;
 
     color: $color;
 }
+
+@mixin fonts($weight, $size, $height, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+
+    color: $color;
+}
