@@ -78,6 +78,10 @@
     color: $white;
 }
 
+.feture-overlay-btn:hover {
+    border: 1px solid #9F9F9F;
+}
+
 .feture-overlay-btn::before {
     content: url(../../img/icon-cart-w.svg);
     vertical-align: middle;
@@ -134,6 +138,10 @@
   border: 1px solid #FF6A6A;
   color: $white;
   cursor: pointer;
+}
+
+.feture-link:hover {
+    text-decoration: underline;
 }
 
 .feture-btn:focus {

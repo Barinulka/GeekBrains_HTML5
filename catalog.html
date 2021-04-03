@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://kit.fontawesome.com/a8bd107372.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -20,10 +21,34 @@
                 </ul>
             </div>
             <div class="header-group">
+                <button class="menu-link menu-link__btn" onclick="addClass()"><i class="fas fa-bars"></i></button>
+                <div class="overlay-menu">
+                    <button class="menu-close-btn" onclick="removeClass()"><i class="fas fa-times"></i></button>
+                    <ul class="overlay-menu-list">
+                        <li class="overlay-menu-item"><h3 class="overlay-menu-title">Menu</h3></li>
+                        <li class="overlay-menu-item"><a href="#" class="overlay-menu-link">Man</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Accesories</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Bags</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Denim</a></li>
+                                <li class="overlay-menu-item__dop overlay-menu-item__last"><a href="#" class="overlay-menu-link">T-Shirts</a></li>
+                        <li class="overlay-menu-item"><a href="#" class="overlay-menu-link">Woman</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Accesories</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Jackets & Coats</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Polos</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">T-Shirts</a></li>
+                                <li class="overlay-menu-item__dop overlay-menu-item__last"><a href="#" class="overlay-menu-link">Shirts</a></li>
+                        <li class="overlay-menu-item"><a href="#" class="overlay-menu-link">Kids</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Accesories</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Jackets & Coats</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Polos</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">T-Shirts</a></li>
+                                <li class="overlay-menu-item__dop"><a href="#" class="overlay-menu-link">Shirts</a></li>
+                                <li class="overlay-menu-item__dop overlay-menu-item__last"><a href="#" class="overlay-menu-link">Bags</a></li>
+                    </ul>  
+                </div>
                 <ul class="menu">
-                    <li class="menu-list"><button class="menu-link menu-link__btn"><i class="fas fa-bars"></i></button></li>
-                    <li class="menu-list menu-list__mobile"><a class="menu-link" href="registr.html"><i class="far fa-user"></i></a></li>
-                    <li class="menu-list menu-list__mobile"><a class="menu-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li class="menu-list menu-list__mobile"><a class="menu-link " href="registr.html"><i class="far fa-user"></i></a></li>
+                    <li class="menu-list menu-list__mobile"><a class="menu-link " href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </div>
         </div>
